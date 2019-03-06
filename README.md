@@ -48,3 +48,6 @@ delete用法：
 delet p;
 delete释放数组内存：
 delete []p;
+
+输出输出：
+cout语句：cout<<表达式1<<表达式2<<endl;
