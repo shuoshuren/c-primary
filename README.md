@@ -31,3 +31,20 @@ using namespace 命名空间名：所指定的命名空间的所有成员都直�
 匿名命名空间：namespace{
 	声明序列可选
 }
+
+new,delete运算符：是c++用于分配，释放堆内存的两个运算符，功能对应于C语言的malloc和 free两个函数
+new的语法：
+类型* p = new 类型；
+e.g: int * p = new int;
+new的同时初始化：
+类型 * p = new 类型(初始值);
+e.g: int * p = new int(123)
+new 一个数组：
+类型 * p = new 类型[N];
+new一个数组显式初始化：
+类型 * p = new 类型[N]{初始值1，初始值2...};
+
+delete用法：
+delet p;
+delete释放数组内存：
+delete []p;
