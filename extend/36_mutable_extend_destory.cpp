@@ -2,7 +2,7 @@
  * 
  * 
  * 
- *  多重继承的构造函数
+ *  多重继承的析构函数
  * 
  * 
  * 
@@ -19,6 +19,10 @@ public:
         this->a = a;
         cout<<"A 构造函数"<<endl;
     }
+
+    ~A(){
+        cout<<"A 析构函数"<<endl;
+    }
 };
 
 
@@ -31,9 +35,13 @@ public:
         this->b = b;
         cout<<"B 构造函数"<<endl;
     }
+
+    ~B(){
+        cout<<"B 析构函数"<<endl;
+    }
 };
 
-//这里的AB顺序决定构造函数初始化顺序
+//这里的AB顺序决定构造函数析构顺序
 class C:public B,public A{
 public:
     int c;
@@ -42,6 +50,10 @@ public:
     C(int a,int b,int c):A(a),B(b){//这里AB顺序不重要
         this->c = c;
         cout<<"c 构造函数"<<endl;
+    }
+
+    ~C(){
+        cout<<"C 析构函数"<<endl;
     }
 
 
