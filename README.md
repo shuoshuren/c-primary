@@ -238,3 +238,6 @@ class 派生类名：继承方式 基类1,继承方式 基类2...{
 语法：`reinterpret_cast<type>(expression)`
 操作结果只是简单的从一个指针到别的指针的值的二进制拷贝，无类型检查，使用时必须约定好，慎用。
 
+# 继承方式
+## public 公有继承
+子类内部可以访问public，protected 成员,子类对象可以访问public成员
