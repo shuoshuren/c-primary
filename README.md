@@ -246,3 +246,4 @@ class 派生类名：继承方式 基类1,继承方式 基类2...{
 子类对象可以访问到public,protected成员，子类对象访问不到
 
 ## private 私有继承
+子类对象可以访问到public,protected成员，子类对象访问不到
