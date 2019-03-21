@@ -346,3 +346,24 @@ try{
 throw:用于抛出异常，被抛出的异常可以是c++内置类型，也可以是自定义类型
 
 class exception 异常类是标准c++库中所有异常类的基类，该类的what成员函数可以打印异常对象的所有异常信息。
+
+# 文件读写
+1.打开文件
+void open(const char * filename,int mode)
+2.文本文件读写
+用`<<`想文件输出，用`>>`从文件输入
+3.二进制文件读写
+ostream& read(unsigned char *buf,int num);
+istream& write(const unsigned char *buf,int num);
+int gcount():获取实际读取的字符数
+4.文件定位：读指针和写指针
+//设置读的位置
+istream& seekg(streamoff offset,seek_dir origin);
+//设置写的位置
+osteram& seekp(streamoff offset,seek_dir origin)
+
+seek_dir枚举：
+ios::beg:文件开头
+ios::cur:文件当前位置
+ios::end;文件结尾
+5. 关闭文件 close()
